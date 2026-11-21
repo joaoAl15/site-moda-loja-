@@ -13,11 +13,11 @@
   width: min(100%, 520px); background: rgba(255, 255, 255, .7);
   -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
   border-radius: 28px; padding: clamp(24px, 6vw, 44px);
-  box-shadow: 0 30px 60px -36px rgba(45, 22, 48, .45); text-align: center;
+  box-shadow: 0 30px 60px -36px rgba(26, 24, 22, .45); text-align: center;
 }
-.adm-login__seal { width: 96px; height: 96px; border-radius: 26%; margin: 0 auto 18px; box-shadow: 0 16px 30px -14px rgba(45, 22, 48, .5); }
+.adm-login__seal { width: 96px; height: 96px; border-radius: 26%; margin: 0 auto 18px; box-shadow: 0 16px 30px -14px rgba(26, 24, 22, .5); }
 .adm-login .title { font-size: clamp(38px, 9vw, 54px); }
-.adm-lead { color: #5e4459; margin: 14px auto 24px; max-width: 400px; }
+.adm-lead { color: #4d463d; margin: 14px auto 24px; max-width: 400px; }
 .adm-form { display: grid; gap: 14px; text-align: left; }
 .adm-error { margin: 0; color: #a0263a; font-size: 14px; font-weight: 600; text-align: center; }
 .adm-error:empty { display: none; }
@@ -26,7 +26,7 @@
 .adm-advanced[open] { display: grid; gap: 12px; }
 .adm-help { margin-top: 18px; border-top: 1px solid var(--line); padding-top: 12px; }
 .adm-help ol { padding-left: 20px; margin: 8px 0 0; }
-.adm-help li { margin: 6px 0; font-size: 14px; color: #5e4459; }
+.adm-help li { margin: 6px 0; font-size: 14px; color: #4d463d; }
 .adm-help a { color: var(--rose); text-decoration: underline; word-break: break-all; }
 .adm-check { display: flex; gap: 10px; align-items: center; font-size: 14px; }
 .adm-check input { width: 18px; height: 18px; accent-color: var(--rose); }
@@ -56,7 +56,7 @@
 .adm-item {
   display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 12px 14px; align-items: center;
   padding: 10px; border-radius: 20px; background: rgba(255, 255, 255, .78);
-  box-shadow: 0 10px 24px -20px rgba(45, 22, 48, .5);
+  box-shadow: 0 10px 24px -20px rgba(26, 24, 22, .5);
 }
 .adm-item.is-off { opacity: .6; }
 .adm-item__thumb { aspect-ratio: 4 / 5; border-radius: var(--frame); overflow: hidden; background: var(--blush); }
@@ -110,7 +110,7 @@
 .adm-switch small { color: var(--muted); }
 .adm-switch input { position: absolute; opacity: 0; pointer-events: none; }
 .adm-switch__ui { width: 46px; height: 28px; border-radius: 999px; background: var(--blush-2); position: relative; flex: none; transition: background .3s; }
-.adm-switch__ui::after { content: ""; position: absolute; top: 3px; left: 3px; width: 22px; height: 22px; border-radius: 50%; background: #fff; box-shadow: 0 2px 6px rgba(45, 22, 48, .25); transition: transform .3s var(--ease); }
+.adm-switch__ui::after { content: ""; position: absolute; top: 3px; left: 3px; width: 22px; height: 22px; border-radius: 50%; background: #fff; box-shadow: 0 2px 6px rgba(26, 24, 22, .25); transition: transform .3s var(--ease); }
 .adm-switch input:checked + .adm-switch__ui { background: var(--rose); }
 .adm-switch input:checked + .adm-switch__ui::after { transform: translateX(18px); }
 .adm-switch input:focus-visible + .adm-switch__ui { outline: 2px solid var(--rose-mid); outline-offset: 2px; }
@@ -119,8 +119,11 @@
 @media (min-width: 560px) { .adm-photo { grid-template-columns: 160px 1fr; } }
 
 /* ---------- Publicando ---------- */
-.adm-busy { position: fixed; inset: 0; z-index: 150; display: grid; place-items: center; background: rgba(255, 247, 250, .88); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); text-align: center; }
+.adm-busy { position: fixed; inset: 0; z-index: 150; display: grid; place-items: center; background: rgba(247, 244, 239, .88); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); text-align: center; }
 .adm-busy[hidden] { display: none; }
 .adm-busy img { width: 90px; height: 90px; border-radius: 26%; margin: 0 auto 12px; animation: admPulse 1.2s ease-in-out infinite; }
 .adm-busy p { margin: 0; font-family: var(--serif); font-size: 22px; font-style: italic; }
 @keyframes admPulse { 50% { transform: scale(.9) rotate(-8deg); } }
+
+.adm-flag[data-toggle="destaque"].is-on { background: var(--gold); border-color: var(--gold); }
+.adm-help a, .adm-advanced summary, .adm-help summary, .adm-foot button { color: var(--gold); }
