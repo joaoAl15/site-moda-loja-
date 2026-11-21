@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Tokanu Moda · Sua loja de moda no WhatsApp</title>
+  <meta name="description" content="Loja de moda feminina e masculina: roupas, calçados, relógios, óculos e acessórios. Escolha na vitrine e finalize o pedido pelo WhatsApp. Um modelo de site da Tokanu para a sua marca.">
+  <meta name="theme-color" content="#fff7fa">
+  <meta property="og:title" content="Tokanu Moda · Imagine a sua marca aqui">
+  <meta property="og:description" content="Vitrine de moda no celular, sacola e pedido direto no WhatsApp. Site da Tokanu.">
+  <meta property="og:image" content="assets/logo/og.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/logo/icone-64.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/logo/icone-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=1">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="igGrad" cx="28%" cy="108%" r="140%">
+        <stop offset="0" stop-color="#fdf497"/><stop offset=".08" stop-color="#fdf497"/>
+        <stop offset=".45" stop-color="#fd5949"/><stop offset=".62" stop-color="#d6249f"/>
+        <stop offset=".95" stop-color="#285aeb"/>
+      </radialGradient>
+      <linearGradient id="igSide" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b8326a"/><stop offset="1" stop-color="#4a2f9e"/></linearGradient>
+      <linearGradient id="igGloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".75"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    </defs>
+    <symbol id="ig3d" viewBox="0 0 64 70">
+      <rect x="4" y="10" width="56" height="56" rx="17" fill="url(#igSide)"/>
+      <rect x="4" y="4" width="56" height="56" rx="17" fill="url(#igGrad)"/>
+      <rect x="9" y="7" width="46" height="22" rx="11" fill="url(#igGloss)" opacity=".5"/>
+      <rect x="17" y="17" width="30" height="30" rx="9.5" fill="none" stroke="#fff" stroke-width="4"/>
+      <circle cx="32" cy="32" r="7.4" fill="none" stroke="#fff" stroke-width="4"/>
+      <circle cx="41.6" cy="22.4" r="2.5" fill="#fff"/>
+    </symbol>
+  </svg>
+
+  <!-- Abertura -->
+  <div class="curtain" id="curtain" aria-hidden="true">
+    <img src="assets/logo/icone-512.png" alt="" width="512" height="512">
+  </div>
+
+  <!-- Topo -->
+  <header class="top" id="top">
+    <a href="#inicio" class="top__brand" aria-label="Tokanu Moda — início">
+      <img src="assets/logo/icone-180.png" alt="" width="180" height="180">
+      <span>tokanu <em>moda</em></span>
+    </a>
+    <nav class="top__nav" aria-label="Principal">
+      <a href="#vitrine" class="top__link top__desk">Vitrine</a>
+      <a href="#categorias" class="top__link top__desk">Categorias</a>
+      <a href="#como-comprar" class="top__link top__desk">Como comprar</a>
+      <a class="top__ig" data-ig-link href="#" target="_blank" rel="noopener" aria-label="Instagram @tokanu_s"><svg class="ig3d" viewBox="0 0 64 70" aria-hidden="true"><use href="#ig3d"/></svg></a>
+      <button class="top__bag" data-open-bag aria-label="Abrir sacola">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="top__badge" data-bag-num>0</span>
+      </button>
+      <button class="top__menu" id="menuOpen" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <!-- Menu -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <div class="menu__inner">
+      <ul class="menu__list">
+        <li><a href="#vitrine" data-menu-link>Vitrine</a></li>
+        <li><a href="#categorias" data-menu-link>Categorias</a></li>
+        <li><a href="#escolhas" data-menu-link>Mais desejados</a></li>
+        <li><a href="#como-comprar" data-menu-link>Como comprar</a></li>
+        <li><a href="#contato" data-menu-link>Quero um site assim</a></li>
+      </ul>
+      <div class="menu__foot">
+        <a data-wa-link href="#" target="_blank" rel="noopener" class="pill pill--rose">WhatsApp</a>
+        <a data-ig-link href="#" target="_blank" rel="noopener" class="pill pill--line pill--ig"><svg class="ig3d" viewBox="0 0 64 70" aria-hidden="true"><use href="#ig3d"/></svg>@tokanu_s</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="inicio">
+    <!-- Hero -->
+    <section class="hero" aria-label="Início">
+      <div class="hero__text">
+        <p class="eyebrow reveal">Moda feminina &amp; masculina · <span data-city></span></p>
+        <h1 class="hero__title reveal">Imagine a <em>sua marca</em><br>vendendo aqui.</h1>
+        <p class="hero__lead reveal">Uma vitrine de moda linda no celular, aberta 24 horas, com a sua logo, as suas peças e o pedido chegando prontinho no seu WhatsApp. Sem login, sem complicação.</p>
+        <div class="hero__cta reveal">
+          <a href="#vitrine" class="pill pill--rose pill--lg">Ver a vitrine <span aria-hidden="true">→</span></a>
+          <a href="#contato" class="link-arrow">Quero um site assim</a>
+        </div>
+      </div>
+
+      <div class="hero__art devices" aria-hidden="true">
+        <div class="laptop" id="archBig">
+          <div class="laptop__lid">
+            <div class="laptop__screen">
+              <div class="screen-ui"><i></i><i></i><i></i></div>
+              <div class="logo3d" data-logo3d><img src="assets/logo/icone-512.png" alt="" width="512" height="512"></div>
+              <span class="screen-word">tokanu<b>_</b></span>
+              <span class="screen-tag">sua loja de moda</span>
+            </div>
+          </div>
+          <div class="laptop__base"></div>
+        </div>
+        <div class="phone3d" id="archSmall">
+          <div class="phone3d__screen">
+            <span class="phone3d__notch"></span>
+            <div class="logo3d logo3d--sm" data-logo3d><img src="assets/logo/icone-512.png" alt="" width="512" height="512"></div>
+            <span class="screen-word screen-word--sm">tokanu<b>_</b></span>
+            <span class="phone3d__btn">Finalizar no WhatsApp</span>
+          </div>
+        </div>
+        <span class="note note--1">sua logo aqui</span>
+        <span class="note note--2">aberta 24h</span>
+        <span class="note note--3">pedido no WhatsApp</span>
+        <svg class="hero__ring" viewBox="0 0 200 200"><circle cx="100" cy="100" r="98" fill="none" stroke="currentColor" stroke-width=".6"/></svg>
+      </div>
+    </section>
+
+    <!-- Faixa -->
+    <div class="brands" aria-label="Produtos da loja">
+      <div class="brands__track">
+        <span>Vestidos</span><i>✦</i><span>Camisas</span><i>✦</i><span>Tênis</span><i>✦</i><span>Saltos</span><i>✦</i><span>Relógios</span><i>✦</i><span>Óculos</span><i>✦</i><span>Anéis</span><i>✦</i><span>Colares</span><i>✦</i><span>Brincos</span><i>✦</i><span>Bolsas</span><i>✦</i>
+        <span>Vestidos</span><i>✦</i><span>Camisas</span><i>✦</i><span>Tênis</span><i>✦</i><span>Saltos</span><i>✦</i><span>Relógios</span><i>✦</i><span>Óculos</span><i>✦</i><span>Anéis</span><i>✦</i><span>Colares</span><i>✦</i><span>Brincos</span><i>✦</i><span>Bolsas</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- Categorias -->
+    <section class="section" id="categorias" aria-label="Categorias">
+      <div class="head">
+        <p class="eyebrow">Feminino &amp; masculino</p>
+        <h2 class="title reveal">O que a sua cliente <em>vai procurar hoje?</em></h2>
+      </div>
+      <div class="cats" id="cats"></div>
+    </section>
+
+    <!-- Mais desejados -->
+    <section class="section section--blush" id="escolhas" aria-label="Mais desejados">
+      <div class="head head--split">
+        <div>
+          <p class="eyebrow">Os mais desejados</p>
+          <h2 class="title reveal">Peças que <em>vendem sozinhas</em></h2>
+        </div>
+        <div class="arrows">
+          <button class="round" data-feat="-1" aria-label="Anterior">←</button>
+          <button class="round" data-feat="1" aria-label="Próximo">→</button>
+        </div>
+      </div>
+      <div class="picks" id="featured"></div>
+    </section>
+
+    <!-- Vitrine -->
+    <section class="section" id="vitrine" aria-label="Vitrine">
+      <div class="head">
+        <p class="eyebrow">Coleção completa</p>
+        <h2 class="title reveal">A <em>vitrine</em></h2>
+      </div>
+
+      <div class="filters" id="filters">
+        <div class="chips" id="chips" role="tablist" aria-label="Categorias"></div>
+        <div class="filters__row">
+          <label class="search">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <span class="sr-only">Buscar produto</span>
+            <input type="search" id="search" placeholder="Buscar vestido, tênis, relógio…" autocomplete="off">
+          </label>
+          <span class="filters__count" id="count"></span>
+        </div>
+      </div>
+
+      <div class="grid" id="grid" aria-live="polite"></div>
+    </section>
+
+    <!-- Como comprar -->
+    <section class="section section--cocoa" id="como-comprar" aria-label="Como comprar">
+      <div class="head">
+        <p class="eyebrow">Sem cadastro, sem complicação</p>
+        <h2 class="title reveal">Como <em>comprar</em></h2>
+      </div>
+      <ol class="steps">
+        <li class="step reveal"><span class="step__n">i.</span><h3>Escolha com calma</h3><p>Veja as fotos, os tamanhos e os detalhes de cada peça e coloque na sacola o que amar.</p></li>
+        <li class="step reveal"><span class="step__n">ii.</span><h3>Envie pelo WhatsApp</h3><p>A sacola monta a mensagem com a lista pronta. É só tocar em enviar.</p></li>
+        <li class="step reveal"><span class="step__n">iii.</span><h3>Receba onde estiver</h3><p>Pagamento, tamanho e entrega são combinados direto com a loja. Enviamos para todo o Brasil.</p></li>
+      </ol>
+    </section>
+
+    <!-- Sobre -->
+    <section class="section about" id="sobre" aria-label="Sobre">
+      <div class="seal3d reveal" id="seal3d">
+        <div class="seal3d__stage">
+          <div class="seal3d__coin" id="coin">
+            <img class="seal3d__face" src="assets/logo/selo-512.png" alt="Selo Tokanu" width="512" height="512" loading="lazy" draggable="false">
+          </div>
+          <div class="seal3d__shadow" aria-hidden="true"></div>
+        </div>
+        <div class="seal3d__minis" id="minis" aria-hidden="true"></div>
+        <p class="seal3d__hint">Toque nas sacolinhas ✦</p>
+      </div>
+      <div class="about__text">
+        <p class="eyebrow">Quem está por trás</p>
+        <h2 class="title reveal">João Marcos <em>Alves</em></h2>
+        <p class="reveal">Criador da Tokanu, sites e sistemas para quem vende. Esta é uma loja de moda pronta para ganhar o seu nome: a gente troca a logo, as cores e as peças, e ela vira a vitrine da sua marca, com um painel para você mesma cadastrar os produtos pelo celular.</p>
+        <ul class="facts reveal">
+          <li><span>Sua marca</span>Logo e cores suas</li>
+          <li><span>Pedidos</span>Direto no WhatsApp</li>
+          <li><span>Painel</span>Você atualiza</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="insta" id="instagram" aria-label="Instagram">
+      <a class="insta__card" data-ig-link href="#" target="_blank" rel="noopener">
+        <span class="insta__icon" id="igTilt"><svg class="ig3d ig3d--xl" viewBox="0 0 64 70" aria-hidden="true"><use href="#ig3d"/></svg></span>
+        <span class="insta__text">
+          <span class="eyebrow">Siga no Instagram</span>
+          <span class="insta__handle">@tokanu_s</span>
+          <span class="insta__lead">Sites novos, bastidores e ideias para a sua loja vender mais.</span>
+          <span class="pill pill--insta pill--lg">Seguir no Instagram <span aria-hidden="true">→</span></span>
+        </span>
+      </a>
+    </section>
+
+    <!-- Contato -->
+    <section class="cta" id="contato" aria-label="Contato">
+      <div class="cta__art" aria-hidden="true">
+        <img class="cta__bag cta__bag--1" src="assets/hero/sacola-rosa.svg" alt="" width="120" height="150">
+        <img class="cta__bag cta__bag--2" src="assets/hero/sacola-ameixa.svg" alt="" width="120" height="150">
+        <img class="cta__bag cta__bag--3" src="assets/hero/sacola-champanhe.svg" alt="" width="120" height="150">
+      </div>
+      <div class="cta__text">
+        <p class="eyebrow">Gostou do que viu?</p>
+        <h2 class="title">Imagine isso <em>com a sua logo.</em></h2>
+        <p>Suas peças, suas cores, o seu nome. Em poucos dias a sua loja de moda pode estar no ar, recebendo pedidos direto no seu WhatsApp.</p>
+        <a data-wa-site href="#" target="_blank" rel="noopener" class="pill pill--cocoa pill--lg">Quero um site assim <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <img class="footer__logo" src="assets/logo/logo-claro.png" alt="Tokanu" width="900" height="185" loading="lazy">
+      <div class="footer__cols">
+        <div>
+          <h4>Contato</h4>
+          <a data-wa-link href="#" target="_blank" rel="noopener">WhatsApp <span data-wa-display></span></a>
+          <a data-ig-link href="#" target="_blank" rel="noopener">Instagram @tokanu_s</a>
+          <p><span data-city></span> · Envio para todo o Brasil</p>
+        </div>
+        <div>
+          <h4>Loja</h4>
+          <a href="#vitrine">Vitrine</a>
+          <a href="#categorias">Categorias</a>
+          <a href="#como-comprar">Como comprar</a>
+          <a href="privacidade.html">Política de privacidade</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__base">
+      <span>© <span id="year"></span> Tokanu · João Marcos Alves · Imagens meramente ilustrativas</span>
+      <span>Site feito por <strong>Tokanu</strong></span>
+    </div>
+  </footer>
+
+  <!-- Painéis -->
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="sheet sheet--product" id="productSheet" role="dialog" aria-modal="true" aria-label="Detalhes do produto">
+    <div class="sheet__grip" aria-hidden="true"></div>
+    <div class="sheet__bar">
+      <span class="sheet__counter" id="pdCounter"></span>
+      <button class="sheet__close" data-close aria-label="Fechar">✕</button>
+    </div>
+    <div class="sheet__scroll" id="pdContent"></div>
+  </aside>
+
+  <aside class="sheet sheet--bag" id="bagSheet" role="dialog" aria-modal="true" aria-label="Sacola">
+    <div class="sheet__grip" aria-hidden="true"></div>
+    <div class="sheet__bar">
+      <span class="sheet__title">Sua sacola <small data-bag-count>(0)</small></span>
+      <button class="sheet__close" data-close aria-label="Fechar">✕</button>
+    </div>
+    <div class="sheet__scroll" id="bagContent"></div>
+    <div class="bag__foot" id="bagFoot">
+      <div class="bag__total"><span>Total estimado</span><strong id="bagTotal">R$ 0,00</strong></div>
+      <div class="fields">
+        <label class="field"><span>Seu nome</span><input id="custName" autocomplete="name" placeholder="Opcional"></label>
+        <label class="field"><span>Cidade / UF</span><input id="custCity" autocomplete="address-level2" placeholder="Opcional"></label>
+      </div>
+      <button class="pill pill--rose pill--lg pill--block" id="checkout">Finalizar no WhatsApp <span aria-hidden="true">→</span></button>
+      <p class="fine">Nada é cobrado aqui. O pedido vai como mensagem para a loja, que confirma valores, tamanhos, pagamento e entrega. <a href="privacidade.html">Privacidade</a></p>
+    </div>
+  </aside>
+
+  <div class="floatbag" id="floatbar">
+    <button data-open-bag class="floatbag__info">
+      <span class="floatbag__count" id="fbCount">0 itens</span>
+      <span class="floatbag__total" id="fbTotal"></span>
+    </button>
+    <button class="pill pill--rose" id="fbGo">Finalizar <span aria-hidden="true">→</span></button>
+  </div>
+
+  <a class="ig-fab is-top" id="igFab" data-ig-link href="#" target="_blank" rel="noopener" aria-label="Instagram @tokanu_s"><svg class="ig3d" viewBox="0 0 64 70" aria-hidden="true"><use href="#ig3d"/></svg></a>
+
+  <a class="wa-fab is-top" id="waFab" data-wa-link href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.43 9.43 0 0 1-4.8-1.32l-.35-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.44 9.43m8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.79.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.6l6.02-1.58a11.3 11.3 0 0 0 5.42 1.38h.01c6.25 0 11.34-5.09 11.35-11.34 0-3.03-1.18-5.88-3.32-8.02"/></svg>
+  </a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/config.js?v=1"></script>
+  <script src="assets/js/app.js?v=1"></script>
+  <script src="assets/js/fx.js?v=1"></script>
+</body>
+</html>
